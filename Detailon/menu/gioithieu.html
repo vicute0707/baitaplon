@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/gioithieu.css">
+    <link rel="shortcut icon" href="./anh/logo1.png">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div class="header-logo" id="dautrang">
+                <div class="logo" style="margin: 0px;">
+                    <img src="./anh/logo-bars.jpg" alt="" height="80px" width="150px">
+                </div>
+                <div class="menu-left">
+                    <ul class="luachontren">
+                        <li>
+                            <div id="cover">
+                                <form method="get" action="">
+                                    <div class="tb">
+                                        <div class="td"><input type="text" placeholder="Search..." required></div>
+                                        <div class="td" id="s-cover">
+                                            <button type="submit">
+                                        <div id="s-circle"></div>
+                                        <span></span>
+                                      </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <div id="tuongvi">
+                            <li>
+                                <a href=""><i class="fa-solid fa-user" style="font-size: 25px;"></i></a>
+                                <div>
+                                    <ul class="sub-menu2">
+                                        <li><a href="./signin.html">Đăng Nhập</a></li>
+                                        <li><a href="./signup.html">Đăng kí</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="bags">
+                                <i class="fa-solid fa-bag-shopping" style="font-size: 25px;"></i>
+                            </li>
+
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="toggle">
+                <div class="bars">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="logo-bars">
+                    <img src="./anh/logo-bars.jpg" alt="">
+                </div>
+                <div class="giohang-bars">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+
+            </div>
+
+            <div id="thanh-bar">
+                <ul id="bars-menu">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="spall.html">Sản phẩm</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                    <li><a href="signup.html">Đăng nhập</a></li>
+                    <li><a href="tintuc.html">Tin tức</a></li>
+                    <li><a href="gioithieu.html">Giới thiệu</a></li>
+                </ul>
+            </div>
+
+            <div class="list-giohang" id="giohang">
+                <button id="suy" style="cursor: pointer;;border: none; background-color: transparent;float: left;"> <i class="fa-solid fa-x" style="color: #ffffff;background-color: deeppink;border-radius: 400px;padding: 10px;font-weight: 800;font-size: 20px;float: left;"></i></button>
+                 <form action="">
+                     <h3>Giỏ hàng</h3>
+                     <table>
+                         <thead>
+                             <tr>
+                                 <th>Sản phẩm</th>
+                                 <th>Giá</th>
+                                 <th>SL</th>
+                                 <th>Chọn</th>
+                             </tr>
+                         </thead>
+                         <tbody>
+                         </tbody>
+                     </table>
+ 
+                 </form>
+               
+             </div>
+             <script>
+                document.getElementById("suy").onclick = function () {
+                    document.getElementById("giohang").style.display = 'none';
+                };
+                </script>
+            <nav class="container">
+                <ul id="main-menu">
+                    <li><a href="index.html" >Trang chủ</a></li>
+                    <li><a href="spall.html" >Sản Phẩm <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                        <div class="subnav row">
+                            <div class="subnav-list">
+                                <h5>Phân Loại</h5>
+                                <ul>
+                                    <li><a href="">Túi Xách</a></li>
+                                    <li><a href="">Balo</a></li>
+                                    <li><a href="">Ví</a></li>
+                                    <li><a href="">Phụ kiện túi</a></li>
+                                </ul>
+                            </div>
+                            <div class="subnav-list">
+                                <h5>Cỡ túi</h5>
+                                <ul>
+                                    <li><a href="">Túi cỡ trung</a></li>
+                                    <li><a href="">Túi cỡ nhỏ</a></li>
+                                    <li><a href="">Túi cỡ lớn</a></li>
+                                </ul>
+                            </div>
+                            <div class="subnav-list">
+                                <h5>SALE OF 50%</h5>
+                                <ul>
+                                    <li>
+                                        <img src="./anhmenu/nbvi1.png" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="subnav-list">
+                                <ul>
+                                    <li>
+                                        <img src="./anhmenu/trung2.png" alt="">
+                                    </li>
+                                </ul>
+                                <h5>Design sang trọng</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="./sitemap.html">SiteMap</a></li>
+                    <li><a href="tintuc.html">Tin Tức</a></li>
+                    <li><a href="./gioithieu.html" style="border-bottom: 2px solid #ffffff; color: rgb(255, 255, 255);background-color: #F2A2C0;">Giới Thiệu</a></li>
+                    <!-- user đăng nhập đăng kí -->
+                </ul>
+            </nav>
+
+            <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+            <script>
+                window.onscroll = function() {
+                    console.info(document.documentElement.scrollTop);
+                    var header = document.getElementById("main-menu");
+                    var elem = document.getElementById("dautrang");
+                    var tube = document.getElementsByClassName("container")
+                    var trai = document.getElementsByClassName("form-menu")
+                    if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
+                        header.style.position = "fixed";
+                        header.style.top =0;
+                        header.style.backgroundColor = "none";
+                        header.style.width = "100%";
+                        header.style.zIndex = "1000";
+                        elem.style.height = "10";
+                    } else {
+                        header.style.position = "relative";
+                        header.style.backgroundColor = "transparent";
+                        header.style.zIndex = "1";
+                        header.style.width = "84%";
+
+                    }
+                }
+            </script>
+        </header>
+        <div id="content">
+            <div class="goc-trai">
+                <div class="card2">
+                    <div class="card2-top-part">
+                      <div class="left-part">
+                        <div class="user-name">
+                          <p class="name">Tường Vi</p>
+                          <p class="role"> CEO </p>
+                        </div>
+                        <div class="user-position">
+                          <p class="position">
+                          Chuyên viên tư vấn
+                        </p>
+                        </div>
+                      </div>
+                      <div class="right-part">
+                        <div class="user-photo">
+                          <img src="./anh/vi23.jpg" class="photo">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card2-bottom-part">
+                      <div class="bottom-part">
+                        <a href="mailto: vi0978294041@gmail.com" class="link">
+                          <span class="icon" > 
+                            <svg viewBox="0 0 20 20" height="20" width="20" xmlns="http://www.w3.org/2000/svg" data-name="20" id="_20" >
+                              <path transform="translate(1.25 3.75)" d="M16.25,12.5h-15A1.252,1.252,0,0,1,0,11.25v-10A1.252,1.252,0,0,1,1.25,0h15A1.251,1.251,0,0,1,17.5,1.25v10A1.251,1.251,0,0,1,16.25,12.5ZM1.25,1.819V11.25h15V1.819L9.106,6.763a.626.626,0,0,1-.713,0ZM2.625,1.25,8.75,5.487,14.875,1.25Z" id="Fill"></path>
+                            </svg>
+                          </span>
+                            Email
+                        </a>
+                      </div>
+                      <div class="bottom-part">
+                        <a href="tel: 0123456789" class="link">
+                          <span class="icon"> 
+                            <svg viewBox="0 0 20 20" height="20" width="20" xmlns="http://www.w3.org/2000/svg" data-name="20" id="_20">
+                              <path transform="translate(1.869 1.875)" d="M14.381,16.25h-.106C2,15.544.249,5.179.006,2.019A1.874,1.874,0,0,1,1.731,0H5.175A1.243,1.243,0,0,1,6.337.787l.95,2.337a1.247,1.247,0,0,1-.275,1.35L5.681,5.818a5.875,5.875,0,0,0,4.738,4.75l1.356-1.344a1.25,1.25,0,0,1,1.356-.257l2.356.944a1.245,1.245,0,0,1,.769,1.163v3.3A1.877,1.877,0,0,1,14.381,16.25Zm-12.5-15a.625.625,0,0,0-.625.625v.05C1.545,5.648,3.4,14.375,14.343,15h.038a.625.625,0,0,0,.625-.589V11.075l-2.356-.944-1.794,1.781-.3-.038A6.733,6.733,0,0,1,5.429,8.553,8.171,8.171,0,0,1,4.381,5.7l-.038-.3L6.118,3.606,5.181,1.25Z" id="Fill"></path>
+                            </svg>
+                          </span>
+                            Phone
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rating" >
+                    <h4 style="width: 50%; color: brown;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Đánh giá độ trải nghiệm</h4>
+                    <label for="star-1">
+                      <input type="radio" id="star-1" name="star-radio" value="star-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                    </label>
+                    <label for="star-2">
+                      <input type="radio" id="star-2" name="star-radio" value="star-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                    </label>
+                    <label for="star-3">
+                      <input type="radio" id="star-3" name="star-radio" value="star-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                    </label>
+                    <label for="star-4">
+                      <input type="radio" id="star-4" name="star-radio" value="star-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                    </label>
+                    <label for="star-5">
+                      <input type="radio" id="star-5" name="star-radio" value="star-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                    </label>
+                  </div>
+            </div>
+            <div class="goc-phai">
+                <div class="title02 titletwo">
+                    <h3>Thành Viên và Liên hệ <br />
+                        <span>NEWS</span><br />
+                    </h3>
+                </div>
+                <div class="card">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="card-inner">
+                        <div class="nhan-gioithieu">
+                            <h3 style="font-size: 2.25rem; color: rgb(255, 178, 178); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">CV shop</h3>
+                            <p style="line-height: 2; color: rgb(250, 44, 37); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> Với hơn 2000 mẫu mã túi xách, ba lô, phụ kiện kiểu dáng đa dạng, nhiều chất liệu khác nhau, đảm bảo chất lượng chắc chắn sẽ làm hài lòng quý khách. Nhân viên nhiệt tình sẵn sàng tư vấn cho khách hàng những sản phẩm chất lượng.
+                                vừa túi tiền khi mua hàng tại shop cũng như mua hàng trực tuyến.</p>
+                            <h3 style="margin-top: 10px;font-size: 2.25rem; color: rgb(255, 166, 166); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">NHẬN DIỆN THƯƠNG HIỆU</h3>
+                            <p style="line-height: 2;margin-bottom: 10px; color: rgb(79, 57, 0); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Sự khác biệt của chúng tôi được minh chứng qua cách chúng tôi hỗ trợ khách hàng. Chúng tôi mong muốn chia sẻ thông điệp và nâng cao giá trị cho cộng đồng. Làm sao có thể mua được sản phẩm tốt, làm sao có thể mua được sản phẩm có
+                                giấy tờ chứng từ rõ ràng.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div class="thanh-vien">
+                <div class="member">
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="./anh/vi.jpg" alt="">
+                        </div>
+                        <h2>Nguyễn Thị Tường Vi</h2>
+                        <div class="social">
+                            <a href="https://www.facebook.com/nguyenvii0707/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <button>Contact Me</button>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="./anh/chieu.jpg" alt="">
+                        </div>
+                        <h2>Đõ Huỳnh Bảo Chiêu</h2>
+                        <div class="social">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <button>Contact Me</button>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+   
+           
+      
+        <div id="footer">
+            <footer class="footer-distributed">
+                <div class="footer-left">
+                    <img src="./anh/logo.gif" alt="" height="120px" width="150px">
+                    <p class="footer-links">
+                        <a href="#" class="link-1">Trang chủ</a>
+                        <a href="#">Sản phẩm</a>
+                        <a href="./sitemap.html">Site Map</a>
+                        <a href="./tintuc.html">Tin tức</a>
+                    </p>
+                    <p class="footer-company-name" style="font-family: cursive; color: rgba(0, 0, 0, 0.489);font-size: 12px;">Demo Web nhóm 3 gồm Tường Vi & Bảo Chiêu </p>
+                </div>
+                <div class="footer-center">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p><span>12 Nguyễn Văn Bảo</span> Phường 4, Quận Gò Vấp</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <p>19002923</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:support@company.com" style="color: black;">c&vbaghands.com</a></p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                        <span>C&V Handbags</span> Lựa chọn thiết kế túi xách nữ quốc tế hàng đầu.
+                    </p>
+                    <div class="footer-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-google"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="../js/giohang.js"></script>
+</body>
+
+</html>

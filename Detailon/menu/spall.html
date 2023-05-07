@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tất cả sản phẩm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/sanpham.css">
+    <link rel="shortcut icon" href="./anh/logo1.png">
+    <link rel="stylesheet" href="../js/main.js">
+</head>
+<script>
+    $(document).ready(function() {
+        $('#toggle .bars').click(function() {
+            $('#thanh-bar').slideToggle();
+        });
+    })
+</script>
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div class="header-logo" id="dautrang">
+                <div class="logo" style="margin: 0px;">
+                    <img src="./anh/logo-bars.jpg" alt="" height="80px" width="150px">
+                </div>
+                <div class="menu-left">
+                    <ul class="luachontren">
+                        <li>
+                            <div id="cover">
+                                <form method="get" action="">
+                                    <div class="tb">
+                                        <div class="td"><input type="text" placeholder="Search..." required></div>
+                                        <div class="td" id="s-cover">
+                                            <button type="submit">
+                                        <div id="s-circle"></div>
+                                        <span></span>
+                                      </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <div id="tuongvi">
+                            <li>
+                                <a href=""><i class="fa-solid fa-user" style="font-size: 25px;"></i></a>
+                                <div>
+                                    <ul class="sub-menu2">
+                                        <li><a href="./signin.html">Đăng Nhập</a></li>
+                                        <li><a href="./signup.html">Đăng kí</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="bags">
+                                <i class="fa-solid fa-bag-shopping" style="font-size: 25px;"></i>
+                            </li>
+
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="toggle">
+                <div class="bars">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="logo-bars">
+                    <img src="./anh/logo-bars.jpg" alt="">
+                </div>
+                <div class="giohang-bars">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+
+            </div>
+
+            <div id="thanh-bar">
+                <ul id="bars-menu">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="spall.html">Sản phẩm</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                    <li><a href="signup.html">Đăng nhập</a></li>
+                    <li><a href="tintuc.html">Tin tức</a></li>
+                    <li><a href="gioithieu.html">Giới thiệu</a></li>
+                </ul>
+            </div>
+
+            <div class="list-giohang" id="giohang">
+                <button id="suy" style="cursor: pointer;;border: none; background-color: transparent;float: left;"> <i class="fa-solid fa-x" style="color: #ffffff;background-color: deeppink;border-radius: 400px;padding: 10px;font-weight: 800;font-size: 20px;float: left;"></i></button>
+                 <form action="">
+                     <h3>Giỏ hàng</h3>
+                     <table>
+                         <thead>
+                             <tr>
+                                 <th>Sản phẩm</th>
+                                 <th>Giá</th>
+                                 <th>SL</th>
+                                 <th>Chọn</th>
+                             </tr>
+                         </thead>
+                         <tbody>
+                         </tbody>
+                     </table>
+ 
+                 </form>
+               
+             </div>
+             <script>
+                document.getElementById("suy").onclick = function () {
+                    document.getElementById("giohang").style.display = 'none';
+                };
+                </script>
+            <nav class="container">
+                <ul id="main-menu">
+                    <li><a href="index.html" >Trang chủ</a></li>
+                    <li><a href="spall.html" style="border-bottom: 2px solid #ffffff; color: rgb(255, 255, 255);background-color: #F2A2C0;">Sản Phẩm <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                        <div class="subnav row">
+                            <div class="subnav-list">
+                                <h5>Phân Loại</h5>
+                                <ul>
+                                    <li><a href="">Túi Xách</a></li>
+                                    <li><a href="">Balo</a></li>
+                                    <li><a href="">Ví</a></li>
+                                    <li><a href="">Phụ kiện túi</a></li>
+                                </ul>
+                            </div>
+                            <div class="subnav-list">
+                                <h5>Cỡ túi</h5>
+                                <ul>
+                                    <li><a href="">Túi cỡ trung</a></li>
+                                    <li><a href="">Túi cỡ nhỏ</a></li>
+                                    <li><a href="">Túi cỡ lớn</a></li>
+                                </ul>
+                            </div>
+                            <div class="subnav-list">
+                                <h5>SALE OF 50%</h5>
+                                <ul>
+                                    <li>
+                                        <img src="./anhmenu/nbvi1.png" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="subnav-list">
+                                <ul>
+                                    <li>
+                                        <img src="./anhmenu/trung2.png" alt="">
+                                    </li>
+                                </ul>
+                                <h5>Design sang trọng</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="./sitemap.html">SiteMap</a></li>
+                    <li><a href="tintuc.html">Tin Tức</a></li>
+                    <li><a href="./gioithieu.html">Giới Thiệu</a></li>
+                    <!-- user đăng nhập đăng kí -->
+                </ul>
+            </nav>
+
+            <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+            <script>
+                window.onscroll = function() {
+                    console.info(document.documentElement.scrollTop);
+                    var header = document.getElementById("main-menu");
+                    var elem = document.getElementById("dautrang");
+                    var tube = document.getElementsByClassName("container")
+                    
+                    if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
+                        header.style.position = "fixed";
+                        header.style.top =0;
+                        header.style.backgroundColor = "none";
+                        header.style.width = "80%";
+                        header.style.zIndex = "1000";
+                        elem.style.height = "10";
+                    } else {
+                        header.style.position = "relative";
+                        header.style.backgroundColor = "transparent";
+                        header.style.zIndex = "1";
+                        header.style.width = "84%";
+
+                    }
+                }
+            </script>
+        </header>
+        <div id="content">
+            
+            <div class="form-menu">
+               
+                <div class="list-sanpham">
+                    <div class="title">
+                        <h3> Sản phẩm nổi bật</h3>
+                    </div>
+                    <div class="sanpham">
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="./anhmenu/tim1.png" alt="">
+                                </td>
+                                <td>
+                                    <p>Túi tím babiShone</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                   
+                    <div class="sanpham">
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="./anhmenu/trung1.png" alt="">
+                                </td>
+                                <td>
+                                    <p>Satchel Top Hander</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="sanpham">
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="./anhmenu/nho11.png" alt="">
+                                </td>
+                                <td>
+                                    <p>Túi nhỏ tím Pastel</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="chat">
+                   <div class="button"><button style="cursor: pointer;;background-color: transparent;border: none;"><i class="fa-solid fa-comments" style="color: #fe5faf; font-size: 45px;"></i></button></div>
+                  <div class="inputt">
+                    <input type="text" placeholder="Liên hệ với chúng tôi">
+                  </div>
+                    <div class="send">
+                        <button style="margin-left: 130px; padding: 10px; border: none; background-color: beige;border-radius: 100px;color: #fe5faf;cursor: pointer;margin-top: -30px;">Send</button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-trai">
+                <div class="gioithieu-thietke">
+                    <a class="boo">
+                        <div class="car">
+                          <div class="wrappe">
+                            <img src="./anhmenu/thietkeVi.webp" class="cover-image" />
+                          </div>
+                          <img src="./anhmenu/logotktv.jpg" class="title" />
+                          <img src="./anh/tkvi.png" class="character" />
+                        </div>
+                      </a>
+                      <a class="boo">
+                        <div class="car">
+                          <div class="wrappe">
+                            <img src="./anhmenu/zi.webp" class="cover-image" />
+                          </div>
+                          <img src="./anhmenu/logotktv.jpg" class="title" />
+                          <img src="./anhmenu/zitachnen.png" class="character" />
+                        </div>
+                      </a>
+                      <a class="boo">
+                        <div class="car">
+                          <div class="wrappe">
+                            <img src="./anhmenu/thietkechieu.webp" class="cover-image" />
+                          </div>
+                          <img src="./anhmenu/logoC.jpg" class="title" />
+                          <img src="./anh/chieuuu.png" class="character" />
+                        </div>
+                      </a>
+                   </div>
+                <div class="title02 titletwo">
+                    <h3> CÁC SẢN PHẨM TÚI GỢI Ý<br />
+                        <span>PRODUCTS ALL </span><br />
+                    </h3>
+                </div>
+                <ul class="product">
+                    <li>
+                        <div class="product-item">
+                            <div class="prosduct-top">
+                                <a href="" class="product-thump">
+                                    <img onmouseover="this.src='./anhmenu/hong2.png'" onmouseout="this.src='./anhmenu/hong1.png' " src="../menu/anhmenu/hong1.png" alt="">
+                                </a>
+                                <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                            </div>
+                            <div class="product-info">
+                                <a href="" class="product-cat">Túi cỡ nhỏ</a>
+                                <a href="" class="product-name">Túi Xách Nhỏ Cầm Tay Seriously Adorable</a>
+                                <div class="product-price">495.000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <div class="prosduct-top">
+                                <a href="" class="product-thump">
+                                    <img onmouseover="this.src='./anhmenu/vi2.png'" onmouseout="this.src='./anhmenu/vi1.png' " src="../menu/anhmenu/vi1.png" alt="">
+                                </a>
+                                <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                            </div>
+                            <div class="product-info">
+                                <a href="" class="product-cat">Ví</a>
+                                <a href="" class="product-name">Ví Diamond Lattice</a>
+                                <div class="product-price">205.000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <div class="prosduct-top">
+                                <a href="" class="product-thump">
+                                    <img onmouseover="this.src='./anhmenu/balo2.png'" onmouseout="this.src='./anhmenu/balo1.png' " src="../menu/anhmenu/balo1.png" alt="">
+                                </a>
+                                <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                            </div>
+                            <div class="product-info">
+                                <a href="" class="product-cat">Túi cỡ lớn</a>
+                                <a href="" class="product-name">Balo Gắn Charm Túi Mini</a>
+                                <div class="product-price">810.000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <div class="prosduct-top">
+                                <a href="" class="product-thump">
+                                    <img onmouseover="this.src='./anhmenu/tim2.png'" onmouseout="this.src='./anhmenu/tim1.png' " src="../menu/anhmenu/tim1.png" alt="">
+                                </a>
+                                <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                            </div>
+                            <div class="product-info">
+                                <a href="" class="product-cat">Túi cỡ nhỏ</a>
+                                <a href="" class="product-name">Túi Xách Nhỏ Top Handle Phối Nơ</a>
+                                <div class="product-price">345.000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <div class="prosduct-top">
+                                <a href="" class="product-thump">
+                                    <img onmouseover="this.src='./anhmenu/trung2.png'" onmouseout="this.src='./anhmenu/trung1.png' " src="../menu/anhmenu/trung1.png" alt="">
+                                </a>
+                                <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                            </div>
+                            <div class="product-info">
+                                <a href="" class="product-cat">Túi cỡ trung</a>
+                                <a href="" class="product-name">Túi Xách Trung Satchel Top Handle</a>
+                                <div class="product-price">999.000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <div class="prosduct-top">
+                                <a href="" class="product-thump">
+                                    <img onmouseover="this.src='./anhmenu/nho12.png'" onmouseout="this.src='./anhmenu/nho11.png' " src="../menu/anhmenu/nho11.png" alt="">
+                                </a>
+                                <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                            </div>
+                            <div class="product-info">
+                                <a href="" class="product-cat">Túi cỡ nhỏ</a>
+                                <a href="" class="product-name">Túi Xách Nhỏ Tennis Club Phối Túi Mini</a>
+                                <div class="product-price">135.000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <div class="prosduct-top">
+                                <a href="" class="product-thump">
+                                    <img onmouseover="this.src='./anhmenu/trung12.png'" onmouseout="this.src='./anhmenu/trung11.png' " src="../menu/anhmenu/trung11.png" alt="">
+                                </a>
+                                <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                            </div>
+                            <div class="product-info">
+                                <a href="" class="product-cat">Túi cỡ trung</a>
+                                <a href="" class="product-name">Túi Xách Trung Đeo Vai Gắn Khóa Trang Trí</a>
+                                <div class="product-price">395.000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <div class="prosduct-top">
+                                <a href="" class="product-thump">
+                                    <img onmouseover="this.src='./anhmenu/trung112.png'" onmouseout="this.src='./anhmenu/trung111.png' " src="../menu/anhmenu/trung111.png" alt="">
+                                </a>
+                                <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                            </div>
+                            <div class="product-info">
+                                <a href="" class="product-cat">Túi cỡ trung</a>
+                                <a href="" class="product-name">Túi Xách Trung Dập họa tiết Diamond Lattice</a>
+                                <div class="product-price">325.000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="product">
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anh/nb12.webp'" onmouseout="this.src='./anh/nb11.webp' " src="./anh/nb11.webp" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ nhỏ</a>
+                            <a href="" class="product-name">Túi thêu họa tiết</a>
+                            <div class="product-price">195.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anh/nb2.webp'" onmouseout="this.src='./anh/nb1.webp' " src="./anh/nb1.webp" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ trung</a>
+                            <a href="" class="product-name">Túi đính cườm blink blink</a>
+                            <div class="product-price">299.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anh/nblon2.webp'" onmouseout="this.src='./anh/nblon1.webp' " src="./anh/nblon1.webp" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ lớn</a>
+                            <a href="" class="product-name">Túi đeo chéo restain</a>
+                            <div class="product-price">320.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anh/nbly2.webp'" onmouseout="this.src='./anh/nbly1.webp' " src="./anh/nbly1.webp" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ trung</a>
+                            <a href="" class="product-name">Túi ly thùa khuyết</a>
+                            <div class="product-price">300.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anh/nbvi2.webp'" onmouseout="this.src='./anh/nbvi1.webp' " src="./anh/nbvi1.webp" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Ví</a>
+                            <a href="" class="product-name">Ví Dimond Kim cương</a>
+                            <div class="product-price">99.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anh/nbtrung2.webp'" onmouseout="this.src='./anh/nbtrung1.webp' " src="./anh/nbtrung1.webp" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ trung</a>
+                            <a href="" class="product-name">Túi đeo vai chữ M</a>
+                            <div class="product-price">299.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anhmenu/trung12.png'" onmouseout="this.src='./anhmenu/trung11.png' " src="../menu/anhmenu/trung11.png" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ trung</a>
+                            <a href="" class="product-name">Túi Xách Trung Đeo Vai Gắn Khóa Trang Trí</a>
+                            <div class="product-price">395.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anhmenu/trung2.png'" onmouseout="this.src='./anhmenu/trung1.png' " src="../menu/anhmenu/trung1.png" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ trung</a>
+                            <a href="" class="product-name">Túi Xách Trung Satchel Top Handle</a>
+                            <div class="product-price">999.000₫</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="product">
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anhmenu/hong2.png'" onmouseout="this.src='./anhmenu/hong1.png' " src="../menu/anhmenu/hong1.png" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ nhỏ</a>
+                            <a href="" class="product-name">Túi Xách Nhỏ Cầm Tay Seriously Adorable</a>
+                            <div class="product-price">495.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anhmenu/vi2.png'" onmouseout="this.src='./anhmenu/vi1.png' " src="../menu/anhmenu/vi1.png" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Ví</a>
+                            <a href="" class="product-name">Ví Diamond Lattice</a>
+                            <div class="product-price">205.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anhmenu/balo2.png'" onmouseout="this.src='./anhmenu/balo1.png' " src="../menu/anhmenu/balo1.png" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ lớn</a>
+                            <a href="" class="product-name">Balo Gắn Charm Túi Mini</a>
+                            <div class="product-price">810.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anhmenu/tim2.png'" onmouseout="this.src='./anhmenu/tim1.png' " src="../menu/anhmenu/tim1.png" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ nhỏ</a>
+                            <a href="" class="product-name">Túi Xách Nhỏ Top Handle Phối Nơ</a>
+                            <div class="product-price">345.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anhmenu/trung2.png'" onmouseout="this.src='./anhmenu/trung1.png' " src="../menu/anhmenu/trung1.png" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ trung</a>
+                            <a href="" class="product-name">Túi Xách Trung Satchel Top Handle</a>
+                            <div class="product-price">999.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anhmenu/nho12.png'" onmouseout="this.src='./anhmenu/nho11.png' " src="../menu/anhmenu/nho11.png" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ nhỏ</a>
+                            <a href="" class="product-name">Túi Xách Nhỏ Tennis Club Phối Túi Mini</a>
+                            <div class="product-price">135.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anhmenu/trung12.png'" onmouseout="this.src='./anhmenu/trung11.png' " src="../menu/anhmenu/trung11.png" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ trung</a>
+                            <a href="" class="product-name">Túi Xách Trung Đeo Vai Gắn Khóa Trang Trí</a>
+                            <div class="product-price">395.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anhmenu/trung112.png'" onmouseout="this.src='./anhmenu/trung111.png' " src="../menu/anhmenu/trung111.png" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ trung</a>
+                            <a href="" class="product-name">Túi Xách Trung Dập họa tiết Diamond Lattice</a>
+                            <div class="product-price">325.000₫</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="product">
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anh/nb12.webp'" onmouseout="this.src='./anh/nb11.webp' " src="./anh/nb11.webp" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ nhỏ</a>
+                            <a href="" class="product-name">Túi thêu họa tiết</a>
+                            <div class="product-price">195.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anh/nb2.webp'" onmouseout="this.src='./anh/nb1.webp' " src="./anh/nb1.webp" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ trung</a>
+                            <a href="" class="product-name">Túi đính cườm blink blink</a>
+                            <div class="product-price">299.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anh/nblon2.webp'" onmouseout="this.src='./anh/nblon1.webp' " src="./anh/nblon1.webp" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ lớn</a>
+                            <a href="" class="product-name">Túi đeo chéo restain</a>
+                            <div class="product-price">320.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anh/nbly2.webp'" onmouseout="this.src='./anh/nbly1.webp' " src="./anh/nbly1.webp" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ trung</a>
+                            <a href="" class="product-name">Túi ly thùa khuyết</a>
+                            <div class="product-price">300.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anh/nbvi2.webp'" onmouseout="this.src='./anh/nbvi1.webp' " src="./anh/nbvi1.webp" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Ví</a>
+                            <a href="" class="product-name">Ví Dimond Kim cương</a>
+                            <div class="product-price">99.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anh/nbtrung2.webp'" onmouseout="this.src='./anh/nbtrung1.webp' " src="./anh/nbtrung1.webp" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ trung</a>
+                            <a href="" class="product-name">Túi đeo vai chữ M</a>
+                            <div class="product-price">299.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anhmenu/trung12.png'" onmouseout="this.src='./anhmenu/trung11.png' " src="../menu/anhmenu/trung11.png" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ trung</a>
+                            <a href="" class="product-name">Túi Xách Trung Đeo Vai Gắn Khóa Trang Trí</a>
+                            <div class="product-price">395.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anhmenu/trung2.png'" onmouseout="this.src='./anhmenu/trung1.png' " src="../menu/anhmenu/trung1.png" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ trung</a>
+                            <a href="" class="product-name">Túi Xách Trung Satchel Top Handle</a>
+                            <div class="product-price">999.000₫</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="product">
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anhmenu/hong2.png'" onmouseout="this.src='./anhmenu/hong1.png' " src="../menu/anhmenu/hong1.png" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ nhỏ</a>
+                            <a href="" class="product-name">Túi Xách Nhỏ Cầm Tay Seriously Adorable</a>
+                            <div class="product-price">495.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anhmenu/vi2.png'" onmouseout="this.src='./anhmenu/vi1.png' " src="../menu/anhmenu/vi1.png" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Ví</a>
+                            <a href="" class="product-name">Ví Diamond Lattice</a>
+                            <div class="product-price">205.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anhmenu/balo2.png'" onmouseout="this.src='./anhmenu/balo1.png' " src="../menu/anhmenu/balo1.png" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ lớn</a>
+                            <a href="" class="product-name">Balo Gắn Charm Túi Mini</a>
+                            <div class="product-price">810.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anhmenu/tim2.png'" onmouseout="this.src='./anhmenu/tim1.png' " src="../menu/anhmenu/tim1.png" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ nhỏ</a>
+                            <a href="" class="product-name">Túi Xách Nhỏ Top Handle Phối Nơ</a>
+                            <div class="product-price">345.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anhmenu/trung2.png'" onmouseout="this.src='./anhmenu/trung1.png' " src="../menu/anhmenu/trung1.png" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ trung</a>
+                            <a href="" class="product-name">Túi Xách Trung Satchel Top Handle</a>
+                            <div class="product-price">999.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anhmenu/nho12.png'" onmouseout="this.src='./anhmenu/nho11.png' " src="../menu/anhmenu/nho11.png" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ nhỏ</a>
+                            <a href="" class="product-name">Túi Xách Nhỏ Tennis Club Phối Túi Mini</a>
+                            <div class="product-price">135.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anhmenu/trung12.png'" onmouseout="this.src='./anhmenu/trung11.png' " src="../menu/anhmenu/trung11.png" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ trung</a>
+                            <a href="" class="product-name">Túi Xách Trung Đeo Vai Gắn Khóa Trang Trí</a>
+                            <div class="product-price">395.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="prosduct-top">
+                            <a href="" class="product-thump">
+                                <img onmouseover="this.src='./anhmenu/trung112.png'" onmouseout="this.src='./anhmenu/trung111.png' " src="../menu/anhmenu/trung111.png" alt="">
+                            </a>
+                            <button href="" class="buy" style="cursor: pointer; border: none;"> <i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ</button>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Túi cỡ trung</a>
+                            <a href="" class="product-name">Túi Xách Trung Dập họa tiết Diamond Lattice</a>
+                            <div class="product-price">325.000₫</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            </div>
+            
+        </div>
+        <div id="footer">
+            <footer class="footer-distributed">
+                <div class="footer-left">
+                    <img src="./anh/logo.gif" alt="" height="120px" width="150px">
+                    <p class="footer-links">
+                        <a href="#" class="link-1">Trang chủ</a>
+                        <a href="#">Sản phẩm</a>
+                        <a href="./sitemap.html">Site Map</a>
+                        <a href="./tintuc.html">Tin tức</a>
+                    </p>
+                    <p class="footer-company-name" style="font-family: cursive; color: rgba(0, 0, 0, 0.489);font-size: 12px;">Demo Web nhóm 3 gồm Tường Vi & Bảo Chiêu </p>
+                </div>
+                <div class="footer-center">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p><span>12 Nguyễn Văn Bảo</span> Phường 4, Quận Gò Vấp</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <p>19002923</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:support@company.com" style="color: black;">c&vbaghands.com</a></p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                        <span>C&V Handbags</span> Lựa chọn thiết kế túi xách nữ quốc tế hàng đầu.
+                    </p>
+                    <div class="footer-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-google"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="../js/giohang.js"></script>
+</body>
+
+</html>

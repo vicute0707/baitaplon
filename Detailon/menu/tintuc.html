@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/tintuc.css">
+    <link rel="shortcut icon" href="./anh/logo1.png">
+</head>
+<script>
+    $(document).ready(function() {
+        $('#toggle .bars').click(function() {
+            $('#thanh-bar').slideToggle();
+        });
+    })
+</script>
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div class="header-logo" id="dautrang">
+                <div class="logo" style="margin: 0px;">
+                    <img src="./anh/logo-bars.jpg" alt="" height="80px" width="150px">
+                </div>
+                <div class="menu-left">
+                    <ul class="luachontren">
+                        <li>
+                            <div id="cover">
+                                <form method="get" action="">
+                                    <div class="tb">
+                                        <div class="td"><input type="text" placeholder="Search..." required></div>
+                                        <div class="td" id="s-cover">
+                                            <button type="submit">
+                                        <div id="s-circle"></div>
+                                        <span></span>
+                                      </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <div id="tuongvi">
+                            <li>
+                                <a href=""><i class="fa-solid fa-user" style="font-size: 25px;"></i></a>
+                                <div>
+                                    <ul class="sub-menu2">
+                                        <li><a href="./signin.html">Đăng Nhập</a></li>
+                                        <li><a href="./signup.html">Đăng kí</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="bags">
+                                <i class="fa-solid fa-bag-shopping" style="font-size: 25px;"></i>
+                            </li>
+
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="toggle">
+                <div class="bars">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="logo-bars">
+                    <img src="./anh/logo-bars.jpg" alt="">
+                </div>
+                <div class="giohang-bars">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+
+            </div>
+
+            <div id="thanh-bar">
+                <ul id="bars-menu">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="spall.html">Sản phẩm</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                    <li><a href="signup.html">Đăng nhập</a></li>
+                    <li><a href="tintuc.html">Tin tức</a></li>
+                    <li><a href="gioithieu.html">Giới thiệu</a></li>
+                </ul>
+            </div>
+
+            <div class="list-giohang" id="giohang">
+                <button id="suy" style="cursor: pointer;;border: none; background-color: transparent;float: left;"> <i class="fa-solid fa-x" style="color: #ffffff;background-color: deeppink;border-radius: 400px;padding: 10px;font-weight: 800;font-size: 20px;float: left;"></i></button>
+                 <form action="">
+                     <h3>Giỏ hàng</h3>
+                     <table>
+                         <thead>
+                             <tr>
+                                 <th>Sản phẩm</th>
+                                 <th>Giá</th>
+                                 <th>SL</th>
+                                 <th>Chọn</th>
+                             </tr>
+                         </thead>
+                         <tbody>
+                         </tbody>
+                     </table>
+ 
+                 </form>
+               
+             </div>
+             <script>
+                document.getElementById("suy").onclick = function () {
+                    document.getElementById("giohang").style.display = 'none';
+                };
+                </script>
+            <nav class="container">
+                <ul id="main-menu">
+                    <li><a href="index.html" >Trang chủ</a></li>
+                    <li><a href="spall.html" >Sản Phẩm <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                        <div class="subnav row">
+                            <div class="subnav-list">
+                                <h5>Phân Loại</h5>
+                                <ul>
+                                    <li><a href="">Túi Xách</a></li>
+                                    <li><a href="">Balo</a></li>
+                                    <li><a href="">Ví</a></li>
+                                    <li><a href="">Phụ kiện túi</a></li>
+                                </ul>
+                            </div>
+                            <div class="subnav-list">
+                                <h5>Cỡ túi</h5>
+                                <ul>
+                                    <li><a href="">Túi cỡ trung</a></li>
+                                    <li><a href="">Túi cỡ nhỏ</a></li>
+                                    <li><a href="">Túi cỡ lớn</a></li>
+                                </ul>
+                            </div>
+                            <div class="subnav-list">
+                                <h5>SALE OF 50%</h5>
+                                <ul>
+                                    <li>
+                                        <img src="./anhmenu/nbvi1.png" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="subnav-list">
+                                <ul>
+                                    <li>
+                                        <img src="./anhmenu/trung2.png" alt="">
+                                    </li>
+                                </ul>
+                                <h5>Design sang trọng</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="./sitemap.html">SiteMap</a></li>
+                    <li><a href="tintuc.html" style="border-bottom: 2px solid #ffffff; color: rgb(255, 255, 255);background-color: #F2A2C0;">Tin Tức</a></li>
+                    <li><a href="./gioithieu.html">Giới Thiệu</a></li>
+                    <!-- user đăng nhập đăng kí -->
+                </ul>
+            </nav>
+
+            <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+            <script>
+                window.onscroll = function() {
+                    console.info(document.documentElement.scrollTop);
+                    var header = document.getElementById("main-menu");
+                    var elem = document.getElementById("dautrang");
+                    var tube = document.getElementsByClassName("container")
+                    var trai = document.getElementsByClassName("form-menu")
+                    if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
+                        header.style.position = "fixed";
+                        header.style.top =0;
+                        header.style.backgroundColor = "pink";
+                        header.style.width = "100%";
+                        header.style.zIndex = "1000";
+                        elem.style.height = "10";
+                    } else {
+                        header.style.position = "relative";
+                        header.style.backgroundColor = "transparent";
+                        header.style.zIndex = "1";
+                        header.style.width = "84%";
+
+                    }
+                }
+            </script>
+        </header>
+        
+        <div id="content">
+            <div class="bieu-trai">
+                <div class="spchuy" style="padding-left: 70px; font-family: Verdana, Geneva, Tahoma, sans-serif;color: rgb(136, 187, 187);">
+                    <h2>Best Seller </h2>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./anhmenu/kem_t.webp" alt="">
+                    </div>
+                    <div class="card-info">
+                      <p class="text-title">Kem Parathousé</p>
+                      <p class="text-body">Sản phẩm thủ công</p>
+                    </div>
+                    <div class="card-footer">
+                    <span class="text-title">$499.49</span>
+                    <div class="card-button">
+                      <svg class="svg-icon" viewBox="0 0 20 20">
+                        <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+                        <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+                        <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+                      </svg>
+                    </div>
+                  </div></div>
+                  <div class="card1">
+                    <div class="card-img">
+                        <img src="./anhmenu/nho11.png" alt="">
+                    </div>
+                    <div class="card-info">
+                      <p class="text-title">Tím trueMle</p>
+                      <p class="text-body">Sản phẩm thủ công</p>
+                    </div>
+                    <div class="card-footer">
+                    <span class="text-title">$234.49</span>
+                    <div class="card-button">
+                      <svg class="svg-icon" viewBox="0 0 20 20">
+                        <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+                        <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+                        <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+                      </svg>
+                    </div>
+                  </div></div>
+                  <div class="card2">
+                    <div class="card-img">
+                        <img src="./anhmenu/vi1.png" alt="">
+                    </div>
+                    <div class="card-info">
+                      <p class="text-title">Ví cam Orrange Tea</p>
+                      <p class="text-body">Sản phẩm thủ công</p>
+                    </div>
+                    <div class="card-footer">
+                    <span class="text-title">$499.49</span>
+                    <div class="card-button">
+                      <svg class="svg-icon" viewBox="0 0 20 20">
+                        <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+                        <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+                        <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+                      </svg>
+                    </div>
+                  </div></div>
+            </div>
+            <div class="bieu-phai">
+                <div class="title02 titletwo">
+                    <h3> Tin tức Thời trang túi<br />
+                        <span>News </span><br />
+                    </h3>
+                </div>
+                <div class="tintuc">
+                    <div class="anh"><img src="../menu/anh/tintuc1.webp" alt=""></div>
+                    <div class="noidung">
+                        <div class="tieude">
+                            <h4>4 kiểu túi ''nhỏ nhưng có võ'', phom mini siêu dễ thương, chị em không sắm thì đúng phí</h4>
+                        </div>
+                        <div class="tacgia">
+                            <i class="fa-solid fa-user" style="color: #ff2ee3;"></i> Nguyễn Thị Tường Vi
+                        </div>
+                        <div class="note">
+                            <p>Túi xách vốn là món đồ thời trang thiết yếu của tất cả mọi người, đặc biệt là phái đẹp. Bên cạnh những mẫu túi to đại, xu hướng sử dụng túi mini ngày càng được ưa chuộng. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tintuc">
+                    <div class="anh"><img src="../menu/anh/tintuc2.webp" alt=""></div>
+                    <div class="tieude">
+                        <h4>8 mẫu túi xách mang tính biểu tượng, được đặt tên theo những phụ nữ nổi tiếng</h4>
+                    </div>
+                    <div class="tacgia">
+                        <i class="fa-solid fa-user" style="color: #ff2ee3;"></i> Nguyễn Thị Tường Vi
+                    </div>
+                    <div class="note">
+                        <p>8 mẫu túi xách mang tính biểu tượng, được đặt tên theo những phụ nữ nổi tiếng...</p>
+                    </div>
+                </div>
+                <div class="tintuc">
+                    <div class="anh"><img src="../menu/anh/tintuc3.webp" alt=""></div>
+                    <div class="tieude">
+                        <h4>Nàng công sở ghim 3 local brand túi xách này, kiểu gì cũng tìm thấy "chân ái" diện đi làm</h4>
+                    </div>
+                    <div class="tacgia">
+                        <i class="fa-solid fa-user" style="color: #ff2ee3;"></i> Nguyễn Thị Tường Vi
+                    </div>
+                    <div class="note">
+                        <p>Với hội chị em công sở, một chiếc túi xách bản to chính là trợ thủ đắc lực giúp nàng chứa đựng cả thế giới, từ đồ đạc cá nhân đến laptop hay tài liệu làm việc. Tuy nhiên, chọn túi...</p>
+                    </div>
+                </div>
+                <div class="tintuc">
+                    <div class="anh"><img src="../menu/anh/tintuc4.webp" alt=""></div>
+                    <div class="tieude">
+                        <h4>Mẫu túi gây sốt diện rộng, khiến sao Việt lẫn giới trẻ mê mệt vì độ chất và giá hợp lý</h4>
+                    </div>
+                    <div class="tacgia">
+                        <i class="fa-solid fa-user" style="color: #ff2ee3;"></i> Nguyễn Thị Tường Vi
+                    </div>
+                    <div class="note">
+                        <p>Thứ hớp hồn sao Việt lẫn giới trẻ toàn cầu gần đây là mẫu túi MISBHV Jacquard Monogram Shoulder Bag. Điều này cho thấy thiên đường túi xách không chỉ ...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <footer class="footer-distributed">
+                <div class="footer-left">
+                    <img src="./anh/logo.gif" alt="" height="120px" width="150px">
+                    <p class="footer-links">
+                        <a href="#" class="link-1">Trang chủ</a>
+                        <a href="#">Sản phẩm</a>
+                        <a href="./sitemap.html">Site Map</a>
+                        <a href="./tintuc.html">Tin tức</a>
+                    </p>
+                    <p class="footer-company-name" style="font-family: cursive; color: rgba(0, 0, 0, 0.489);font-size: 12px;">Demo Web nhóm 3 gồm Tường Vi & Bảo Chiêu </p>
+                </div>
+                <div class="footer-center">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p><span>12 Nguyễn Văn Bảo</span> Phường 4, Quận Gò Vấp</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <p>19002923</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:support@company.com" style="color: black;">c&vbaghands.com</a></p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                        <span>C&V Handbags</span> Lựa chọn thiết kế túi xách nữ quốc tế hàng đầu.
+                    </p>
+                    <div class="footer-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-google"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+     <script src="../js/giohang.js"></script>
+</body>
+
+</html>

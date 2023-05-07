@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/user.css">
+    <link rel="shortcut icon" href="./anh/logo1.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: url('./anh/backgrounddangnhap.gif');
+        }
+        
+        .container {
+            background-color: #89414100;
+            color: aliceblue;
+            border-bottom: 1px solid #ffffff;
+        }
+        
+        .subnav {
+            display: none;
+            position: absolute;
+            background: #e49ac0c4;
+            width: 1215px;
+            left: -280px;
+            height: auto;
+            font-size: 16px;
+            z-index: 1;
+            justify-content: space-between;
+            animation: Open 0.3s ease-in;
+        }
+    </style>
+    <div id="wrapper">
+        <header id="header">
+            <div class="header-logo" id="dautrang">
+                <div class="logo" style="margin: 0px;">
+                    <img src="./anh/logo-bars.jpg" alt="" height="80px" width="150px">
+                </div>
+                <div class="menu-left">
+                    <ul class="luachontren">
+                        <div id="tuongvi">
+                            <li>
+                                <a href=""><i class="fa-solid fa-user" style="font-size: 25px;"></i></a>
+                                <div>
+                                    <ul class="sub-menu2">
+                                        <li><a href="./signin.html">Đăng Nhập</a></li>
+                                        <li><a href="./signup.html">Đăng kí</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="bags">
+                                <i class="fa-solid fa-bag-shopping" style="font-size: 25px;"></i>
+                            </li>
+
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="toggle">
+                <div class="bars">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="logo-bars">
+                    <img src="./anh/logo-bars.jpg" alt="">
+                </div>
+                <div class="giohang-bars">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+
+            </div>
+
+            <div id="thanh-bar">
+                <ul id="bars-menu">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="spall.html">Sản phẩm</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                    <li><a href="signup.html">Đăng nhập</a></li>
+                    <li><a href="tintuc.html">Tin tức</a></li>
+                    <li><a href="gioithieu.html">Giới thiệu</a></li>
+                </ul>
+            </div>
+
+            <div class="list-giohang" id="giohang">
+                <button id="suy" style="cursor: pointer;;border: none; background-color: transparent;float: left;"> <i class="fa-solid fa-x" style="color: #ffffff;background-color: deeppink;border-radius: 400px;padding: 10px;font-weight: 800;font-size: 20px;float: left;"></i></button>
+                 <form action="">
+                     <h3>Giỏ hàng</h3>
+                     <table>
+                         <thead>
+                             <tr>
+                                 <th>Sản phẩm</th>
+                                 <th>Giá</th>
+                                 <th>SL</th>
+                                 <th>Chọn</th>
+                             </tr>
+                         </thead>
+                         <tbody>
+                         </tbody>
+                     </table>
+ 
+                 </form>
+               
+             </div>
+             <script>
+                document.getElementById("suy").onclick = function () {
+                    document.getElementById("giohang").style.display = 'none';
+                };
+                </script>
+        
+            <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+            <script>
+                window.onscroll = function() {
+                    console.info(document.documentElement.scrollTop);
+                    var header = document.getElementById("main-menu");
+                    var elem = document.getElementById("dautrang");
+                    var tube = document.getElementsByClassName("container")
+                    var trai = document.getElementsByClassName("form-menu")
+                    if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
+                        header.style.position = "fixed";
+                        header.style.top =0;
+                        header.style.backgroundColor = "none";
+                        header.style.width = "80%";
+                        header.style.zIndex = "1000";
+                        elem.style.height = "10";
+                    } else {
+                        header.style.position = "relative";
+                        header.style.backgroundColor = "transparent";
+                        header.style.zIndex = "1";
+                        header.style.width = "84%";
+
+                    }
+                }
+            </script>
+        </header>
+        <div id="content">
+            <div class="danhmuc">
+                <div class="card1 card-5">
+                    <div class="card1__icon">🏆</div>
+                    <p class="card1__exit">※</p>
+                    <div class="text">Khách Hàng thân thiết ưu đãi lên đến 35%</div>
+                    <p class="card1__apply">
+                      <a class="card1__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+                    </p>
+                  </div>
+                  <div class="card2">
+                    <div class="imag">
+                        <img src="./anh/ma-qr-la-gi.jpg" alt="">
+                    </div>
+                     <div class="conten">
+                       <a href="#">
+                         <span class="titl">
+                           Đăng nhập bằng quét mã QR
+                         </span>
+                       </a>
+                   
+                       <p class="desc">
+                         Đăng nhập chỉ bằng một lần quét.
+                         Đăng nhập tài khoản lên thiết bị khác nhanh chóng
+                       </p>
+                   
+                       <a href="#" class="action">
+                         Tìm hiểu thêm 
+                         <span aria-hidden="true">
+                           →
+                         </span>
+                       </a>
+                     </div>
+                   </div>
+            </div>
+            <div class="inner">
+                <div class="image-holder">
+                    <img src="./anhmenu/trung112.png" alt="" style="width: 410px; height: auto;">
+                </div>
+                <form class="" action="">
+                    <h3>Sign up</h3>
+                    <p class="error"></p>
+                    <div class="row">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="email" placeholder="e-mail" id="email" class="form-control">
+                    </div>
+                    <div class="row">
+                        <i class="fa-solid fa-unlock"></i>
+                        <input type="password" placeholder="password" id="psw" class="form-control">
+                    </div>
+                    <div class="forgetpassword">
+                        <label style="font-size: 16px;">
+                                <p>You haven't account? <a href="signup.html">Click here</a></p>
+                            </label>
+                    </div>
+                    <div class="form-login">
+                        <button class="btn" type="button" onclick="loadData()">Sign up</button>
+                    </div>
+                </form>
+                
+            </div>
+            <div class="trangchu" style="width: 30%; float: right; margin-left: 90%;">
+                <a href="./index.html" style="text-decoration: none;"><button class="contactButton" style="background: #ff9bf8;
+                    width: 200px;
+                    color: white;
+                    font-family: inherit;
+                    padding: 0.45em;
+                    padding-left: 1.0em;
+                    font-size: 17px;
+                    font-weight: 500;
+                    border-radius: 0.9em;
+                    border: none;
+                    letter-spacing: 0.05em;
+                    display: flex;
+                    align-items: center;
+                    box-shadow: inset 0 0 1.6em -0.6em #cfb6ff;
+                    overflow: hidden;
+                    position: relative;
+                    height: 2.8em;
+                    padding-right: 3em;"> Trang chủ
+                        <div class="iconButton" style="margin-left: 1em;
+                        position: absolute;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 2.2em;
+                        width: 2.2em;
+                        border-radius: 0.7em;
+                        box-shadow: 0.1em 0.1em 0.6em 0.2em #7a8cf3;
+                        right: 0.3em;
+                        transition: all 0.3s;">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+                        </div>
+                      </button></a>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>
+        let name = localStorage.getItem('name') ? localStorage.getItem('name') : ''
+        if (name != '') {
+            alert('Bạn đã đăng nhập!!');
+            window.location.href = "profile.html";
+        }
+
+        function loadData() {
+            const err = document.querySelector(".error");
+            var email = document.getElementById("email").value;
+            var psw = document.getElementById("psw").value;
+            var user = [];
+            const userData = JSON.parse(localStorage.getItem("users"));
+            user = userData ? userData : [];
+            const checkEmail = user.find((el) => el.email === email);
+            const checkPassword = user.find((el) => el.password === psw);
+            if (checkPassword && checkEmail) {
+                let current_user = user.filter((el) => {
+                    return el.email == email && el.password == psw;
+                })[0];
+                const userData = JSON.parse(localStorage.getItem('arr'))
+                localStorage.setItem("name", current_user.name);
+                localStorage.setItem("email", current_user.email);
+                const findUserData = userData.find(el => el.name == current_user.name)
+                if (findUserData != null) {
+                    if (current_user.name === findUserData.name) {
+                        localStorage.setItem('fullname', findUserData.fullname)
+                        localStorage.setItem('address', findUserData.address)
+                        localStorage.setItem('phoneNumber', findUserData.phoneNumber)
+                        localStorage.setItem('city', findUserData.city)
+                    }
+                }
+                window.location.href = "profile.html";
+            } else {
+                err.innerHTML = "Email hoặc mật khẩu không đúng";
+            }
+        };
+    </script>
+</body>
+
+</html>
+
+</html>
